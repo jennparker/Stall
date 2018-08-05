@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">stall</string>
+    <string name="happy_btn_text">Happy</string>
+    <string name="fail_btn_text">Fail</string>
+    <string name="alert_dialog_message">Want More?</string>
+    <string name="alert_dialog_title">There\'s more where that came from</string>
+    <string name="alert_dialog_positive">Yep!</string>
+    <string name="alert_dialog_negative">Nope!</string>
+
+</resources>

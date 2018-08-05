@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:backgroundTint="@color/gray"
+    android:layout_margin="12dp"
+    tools:context="com.booisajerk.stall.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/youtube_player_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/youtube_player"
+            android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/happy_button"
+        android:background="@mipmap/happy"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="24dp"
+        android:gravity="center_vertical"
+        style="@style/ButtonStyle"
+        android:onClick="onBtnClick"/>
+
+    <Button
+        android:id="@+id/random_button"
+        android:layout_width="150dp"
+        android:background="@mipmap/random"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        style="@style/ButtonStyle"
+        android:onClick="onBtnClick"/>
+
+    <Button
+        android:id="@+id/fail_button"
+        android:layout_width="150dp"
+        android:layout_margin="24dp"
+        android:background="@mipmap/fail"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:onClick="onBtnClick"/>
+</RelativeLayout>
